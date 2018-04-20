@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
       render json: { errors: comment.errors.full_messages.join(',') }, status: 422
   end
 
-  def destory
+  def destroy
     @comment.destroy
   end
 
